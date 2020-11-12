@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprobatorio3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <style>
+       *{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.container{
+   margin-top: 80%;
+}
+
+
+main{
+   margin-top: 20px;
+   margin-left: 15%;
+   margin-right: 50px;
+   margin-bottom: 20px;
+}
+ 
+
+ body{
+    background-image: url("img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;   
+ }
+
+
+ .responsive-img{
+    transform: translateY(10px);
+}
+
+
+.row{
+    background-color: none;
+    font-weight: bold;
+    font-size: 20pt;  
+    transform: translateY(50px);
+}
+
+
+.carousel{
+    width: 80%;
+ 
+}
+
+
+.modal-content{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.modal{
+height: 63%;
+background-color: #ffffffea;
+}
+
+
+.container{
+  margin-top: 60px;
+}
+
+
+@media (max-width: 1024px) {
+     
+     #banner-season{
+      
+     background-image: url('img/fondo.png');
+     }
+    
+ }
+ 
+ @media ( max-width: 768px) {
+ 
+body{
+background-image:url('img/fondo.png');
+background-color:#ffffff;
+} 
+
+}
+ 
+ @media (max-width: 480px) {
+    body{
+background-image: url('img/fondo.png');
+background-color:#ffffff;
+  }
+
+}   
+   
+</style>
+   
+<body>
+
+<!--Inicio-->
+
+<header>  
+<nav class="nav-extended transparent">
+<div class="nav-wrapper"> 
+<img class="responsive-img" src="img/logo s.png">
+<a class="brand-logo grey-text text-darken-3">Sitica</a>
+<a href="#" class="sidenav-trigger " data-target="menuside">
+  <i class="material-icons purple-text">menu</i>
+</a>
+<ul class="sidenav" id="menuside">
+  <li>
+    <div class="background purple"></div>
+    <a href="#">
+      <img src="img/logo s.png" alt="" class="circle">
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <i class="material-icons">home</i>
+      Home
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <i class="material-icons">local_grocery_store</i>
+      Products
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <i class="material-icons">assistant</i>
+      Support
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <i class="material-icons">favorite</i>
+     About
+    </a>
+  </li>
+</ul>
+<ul id="nav-mobile" class="right hide-on-med-and-down">
+<li><a>Home</a></li>
+<li><a>Products</a></li>
+<li><a>Support</a></li>
+<li><a> About</a></li>
+<button class="btn modal-trigger purple" data-target="login">LOGIN</button>
+
+
+<!--Login-->
+
+<div id="login"class="modal">
+  <div class="modal-content">
+    <h4 class="modal-content center-align purple-text col s10">LOGIN</h4>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="" id="first_name" type="text" class="validate">
+                  <label for="first_name">Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="" id="password" type="text" class="validate">
+                  <label for="first_name">Email</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="" id="email" type="text" class="validate">
+                  <label for="first_name">Password</label>
+                </div>
+              </div>
+
+              <div class="container">
+                <a href="" class="container center-align btn modal-close purple">Sign in</a>
+              </div>
+            </form>
+          </div>
+                
+ </header>
+ 
+
+<main>
+
+<!--Carrusel-->
+
+<div class="row">
+  <div class="content center-align purple lighten-3">
+  <div class="col s4">
+    <div class="carousel carousel-slider  col s12 m8 l7">
+        <a class="carousel-item"><img src="img/sitica.png">
+          <p href="#">More Details</p></a>
+        <a class="carousel-item"><img src="img/citica.png">
+          <p href="#">More Details</p></a>
+        <a class="carousel-item"><img src="img/atica.png">
+          <p href="#">More Details</p></a>
+    </div>
+</div>  
+</div> 
+</div>
+
+<!--Contenido-->
+
+<div class="container"></div>
+<h6 class="col s10 grey-text text-darken-1">DO YOU EVER WORRY ABOUT</h6>
+<h4 class=" col s12 m8 l6 grey-text text-darken-3">We are going to launch things that helps to improve </h4>
+  <form class="col s6 l6 m6">
+  <div class="input-field col s6 m6 l6">
+  <i class="material-icons prefix purple-text text-accent-3 ">send</i>
+  <input id="icon_prefix" type="text" class="validate" >
+  <label for="icon_prefix ">Your email address</label>
+  </div>  
+  </form>
+  </div>
+</main>
+
+
+<!--Floating-->
+
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large purple darken-3">
+    <i class="large material-icons">call</i>
+  </a>
+  <ul>
+    <li><a class="btn-floating purple lighten-4"><i class="material-icons">cloud</i></a></li>
+    <li><a class="btn-floating purple lighten-3"><i class="material-icons">publish</i></a></li>
+    <li><a class="btn-floating purple lighten-2"><i class="material-icons">camera</i></a></li>
+  </ul>
+</div>
+
+
+<!--Footer-->
+
+<footer class="page-footer purple">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <p class="grey-text text-lighten-4"> Sitica</p>
+        <br>
+        <h6 class="white-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h6>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <p class="white-text">Social Media</p>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">...</a></li>
+ <br>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container center-align"> © 2014 Copyright Text
+    </div>
+  </div>
+</footer>
+
+
+
+<!--Script-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems,{
+        duration: 500,
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, );
+  });
+ </script>
+
+ <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems);
+  });
+
+ </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
